@@ -1412,6 +1412,8 @@ public class LocationManager extends CordovaPlugin implements BeaconConsumer {
         dict.put("major", region.getId2());
         dict.put("minor", region.getId3());
 
+        dict.put("ble_address", region.getBluetoothAddress());
+
         // proximity
         dict.put("proximity", nameOfProximity(region.getDistance()));
 
